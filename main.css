@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: brown;
+  text-shadow: 0.2rem 0.4rem rgb(229, 138, 138);
+  font-family: "Rubik Vinyl", "cursive";
+}
+
+.container0 {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 190, 190);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.container0 .flex-center1 {
+  background-color: white;
+  border-radius: 4rem;
+  box-shadow: 0 0.4rem 1.4rem 0 brown;
+  padding: 60px;
+  width: 40vw;
+}
+.container0 .flex-center1 .flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.container0 .flex-center1 .flex-column .inpText {
+  margin-top: 4rem;
+  padding: 0.5rem;
+  border: 1px solid brown;
+  border-radius: 0.5rem;
+}
+.container0 .flex-center1 .flex-column .inpSubmit {
+  margin-top: 1rem;
+  background-color: rgb(186, 57, 57);
+  padding: 1rem;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.container0 .flex-center1 .flex-column .inpSubmit:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(202, 152, 152);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+.container0 .flex-center1 .flex-column .inpText:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(202, 152, 152);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+  border: none;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 190, 190);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.container .flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.container .flex .question-n {
+  font-size: large;
+  font-weight: bold;
+  color: brown;
+}
+.container .flex .progress-bar {
+  border: 2px solid brown;
+  width: 8rem;
+  height: 2rem;
+}
+.container .flex .progress-bar .full-progress {
+  background-color: brown;
+  height: 100%;
+  width: 50%;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 4rem;
+  box-shadow: 0 0.4rem 1.4rem 0 brown;
+  padding: 60px;
+  width: 60vw;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.display-flex {
+  display: flex;
+  background-color: white;
+  border: 1.5px solid brown;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.display-flex .A {
+  font-weight: bold;
+  color: brown;
+  font-size: larger;
+}
+.display-flex p {
+  margin-left: 1rem;
+}
+
+.display-flex:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 brown;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.addGreen {
+  background-color: green !important;
+  color: white;
+}
+
+.addRed {
+  background-color: red !important;
+  color: white;
+}
+
+.container2 {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 190, 190);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 4rem;
+  box-shadow: 0 0.4rem 1.4rem 0 brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card .scor {
+  width: 9rem;
+  height: 9rem;
+  border: 2px solid green;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .scor span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.card .scorR {
+  border: 2px solid red;
+}
+.card .btnResult {
+  margin-top: 2rem;
+}
+.card .btnResult a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(231, 139, 139);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.card .centerMsg h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: green;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+.card .centerMsg .msgF {
+  color: red;
+}
+.card h5 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.container3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 190, 190);
+}
+.container3 .card2 {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: white;
+  width: 50rem;
+  height: 33rem;
+  box-shadow: 0 0.4rem 1.4rem 0 brown;
+}
+.container3 .card2 h6 {
+  font-size: 1.5rem;
+  color: brown;
+}
+.container3 .card2 p {
+  font-size: large;
+}/*# sourceMappingURL=main.css.map */
