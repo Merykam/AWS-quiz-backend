@@ -1,7 +1,8 @@
 
 let qst =JSON.parse(localStorage.getItem('Question'));
 let AnswerUser =JSON.parse(localStorage.getItem('answerUser'));
-let RightUser =JSON.parse(localStorage.getItem('RightAnswer'));
+let RightAnswer =JSON.parse(localStorage.getItem('RightAnswer'));
+let Explication =JSON.parse(localStorage.getItem('Explication'));
 
 
 for(let i=0;i<qst.length;i++){
@@ -17,14 +18,12 @@ for(let i=0;i<qst.length;i++){
            <p id="AnswerUser">${AnswerUser[i]}</p>
 
             <h6>The right answer :</h6>
-            <p id="RightAnswer">${RightUser[i]}</p>
+            <p id="RightAnswer">${RightAnswer[i]}</p>
 
             <h6>Explication :</h6>
-            <p id="Explication">eeeeezzrty</p> 
+            <p id="Explication">${Explication[i]}</p> 
 
-      
-
-           
+    
 
     </div>
 
