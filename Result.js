@@ -1,4 +1,10 @@
 
+import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+function cong(){
+    confetti();
+}
+
+
 
 var Mark = document.getElementById('Mark');
 
@@ -12,8 +18,16 @@ console.log(parseInt(localStorage.getItem('score')));
 
 
 
-if(parseInt(localStorage.getItem('score'))>50){
+if(parseInt(localStorage.getItem('score'))>=50){
+    // document.querySelector(".width1").style.display="block";
+ 
 
+
+        cong();
+        cong();
+        cong();
+        cong();
+        
   
   
 
@@ -24,7 +38,9 @@ if(parseInt(localStorage.getItem('score'))>50){
     }
 
 
-}else if(parseInt(localStorage.getItem('score'))<50){
+}else{
+
+
     console.log("helloooooooooo");
     document.getElementById('user').innerHTML='Unfortunately '+localStorage.getItem('name');
     document.getElementById('msgSucc').innerHTML='You failed in quiz';
