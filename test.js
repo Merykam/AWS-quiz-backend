@@ -5,13 +5,10 @@ var questionNumber=document.getElementById('question-number');
 var questionConter=0;
 var fullProgress = document.querySelector('.full-progress');
 
-// var Mark= document.getElementById('Mark');
-// console.log(Mark);
 
 
 let availableQuestionA = [];
 var score = 0;
-
 var answerUser=[];
 var questionChoice=[];
 var RightAnswer=[];
@@ -21,25 +18,25 @@ var Explication=[];
 
 
 
-var gg ;
+var data ;
 async function getText() {
     let myObject = await fetch('quiz.php');
     let myText = await myObject.text();
-    gg = JSON.parse(myText);
-    availableQuestion(gg);
+    data = JSON.parse(myText);
+    availableQuestion();
    
-    getNewQuestion(gg);
+    getNewQuestion();
     
-    // answerQuestion(gg);
+    
   }
 
 
-console.log(gg);
+console.log(data);
 function availableQuestion(){
     
-    for(let i=0; i<gg.length ; i++){
+    for(let i=0; i<data.length ; i++){
 
-        availableQuestionA.push(gg[i]);
+        availableQuestionA.push(data[i]);
         
 
     }
@@ -52,29 +49,18 @@ function availableQuestion(){
 getText();
 
 
-// function showQuestion(){
-
-//     availableQuestion();
-
-//     getNewQuestion();
-
-
-
-
-
-// }
 
 
 
 function getNewQuestion(){
-    console.log(gg);
+    console.log(data);
 
-    questionNumber.innerHTML = 'Question ' + (questionConter + 1) + ' / ' + gg.length;
-    console.log(gg.length);
+    questionNumber.innerHTML = 'Question ' + (questionConter + 1) + ' / ' + data.length;
+    console.log(data.length);
 
-    fullProgress.style.width = `${(questionConter*100)/gg.length}%`;
+    fullProgress.style.width = `${(questionConter*100)/data.length}%`;
 
-    if(questionConter == gg.length){
+    if(questionConter == data.length){
         return window.location.assign('highscores.html');
     }
     
@@ -127,7 +113,7 @@ function answerQuestion(option){
                 
            setTimeout ( () => {
             option.classList.remove("addGreen");
-            getNewQuestion(gg);
+            getNewQuestion();
 
            },1000);
             
@@ -174,7 +160,7 @@ function answerQuestion(option){
            
            setTimeout ( () => {
             option.classList.remove("addRed");
-            getNewQuestion(gg);
+            getNewQuestion();
 
            },1000);
            

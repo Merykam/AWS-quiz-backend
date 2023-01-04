@@ -7,7 +7,7 @@ h1{
    font-size:  6rem;
    font-weight: bold;
    color: brown;
-   text-shadow: 0.2rem 0.4rem  rgb(229, 138, 138);
+   // text-shadow: 0.2rem 0.4rem  rgb(229, 138, 138);
    font-family: 'Rubik Vinyl', 'cursive';
 
    // margin-bottom: 5rem;
@@ -17,27 +17,21 @@ h1{
    align-items: center;
 
 }
-@mixin container{
-   justify-content: center;
-   align-items: center;
-   // background-color: rgb(238, 190, 190);
-   width: 100vw;
-   height: 100vh;
-   display: flex;
-   max-width: 80rem;
-   margin: 0 auto;
+// @mixin container{
+//    justify-content: center;
+//    align-items: center;
+//    // background-color: rgb(238, 190, 190);
+//    width: 100vw;
+//    height: 100vh;
+//    display: flex;
+//    // max-width: 80rem;
+//    // margin: 0 auto;
 
-}
+// }
 
 .container0{
    @include container;
    background-color: rgb(238, 190, 190);
-   // background-color: rgb(238, 190, 190);
-   // width: 100vw;
-   // height: 100vh;
-   // display: flex;
-   // max-width: 80rem;
-   // margin: 0 auto;
 
    .flex-center1{
       background-color:white;
@@ -129,11 +123,12 @@ h1{
 }
 .flex-center{
    @include center-items;
-   background-color:white;
+   background-color:rgb(158, 53, 53);
    border-radius: 4rem;
    box-shadow: 0 0.4rem 1.4rem 0 brown;
    padding: 60px;
    width: 60vw;
+   // height: 100vh;
    // height: 30vh;
 
 
@@ -349,4 +344,23 @@ h2{
 
    }
    
+
+   // @media (max-width: 1150px) {
+   //    // h1{
+   //    //    font-size:  2rem;
+   //    //    text-align: center;
+         
+   //    //    font-weight: bold;
+   //    //    color: brown;
+       
+   //    //    font-family: 'Rubik Vinyl', 'cursive';
+   //    // }
+    
+   //    .container0 .flex-center1{
+   //      width: 60vw;
+   //      background-color: aquamarine;
+   //    }
+     
+    
+   //  }
 
