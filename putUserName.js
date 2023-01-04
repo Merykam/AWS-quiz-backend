@@ -5,6 +5,11 @@
 // document.querySelector('.inpText').value;
 
 function getInputvalue(){
+    var x = document.querySelector('.inpText').value
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
     
     
 
