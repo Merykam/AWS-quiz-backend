@@ -2,36 +2,205 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
 
+
+
+ $backgroundC:rgb(238, 190, 190);
+ $CalorCard :brown;
+ $Mcolor :rgb(117, 29, 117);
+ $RedColor:rgb(226, 17, 17);
+ $GreenColor:green;
+
+.container4{
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   background-color: $backgroundC ;
+   .rules{
+      padding-top: 40px;
+      padding-left: 40px;
+    
+      background-color: white;
+      width:25rem ;
+      height: 15rem;
+      border-radius: 2rem;
+     box-shadow: 0 0.4rem 1.4rem 0 brown ;
+     .flex-end{
+      margin-top: 25px;
+      margin-left: 12rem;
+     
+     }
+     .A1{
+      margin-top: 25px;
+      font-size: 1rem;
+      text-decoration: none;
+      color: brown;
+      font-weight: bold;
+      background-color: white;
+      border: brown;
+      padding: 10px;
+      border-radius: 1rem;
+      border: 2px solid brown;
+      width: 2rem;
+      text-align: center;
+     }
+     .A2{
+      margin-top: 25px;
+      font-size: 1rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background-color: brown;
+      border: brown;
+      padding: 10px;
+      border-radius: 1rem;
+     
+      width: 2rem;
+      text-align: center;
+     }
+     p{
+      span{
+         color:  $CalorCard;
+         font-weight: bold;
+      }
+     }
+     h5{
+      font-size: 1.5rem;
+      color:  brown;
+     }
+
+     .rulesP{
+      margin-top: 30px;
+      line-height: 1.5;
+     }
+   }
+   h6{
+      font-size: 7rem;
+      color: brown;
+      font-family: 'Rubik Vinyl', 'cursive';
+      animation: pulse !important; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s !important; /* don't forget to set a duration! */
+      animation-iteration-count: infinite !important;
+      text-shadow: 1px 1px 2px rgb(34, 15, 18)!important;
+    }
+   .Start{
+      margin-top: 25px;
+      font-size: 2rem;
+      text-decoration: none;
+      color: brown;
+      font-weight: bold;
+      background-color: white;
+      border: brown;
+      padding: 15px;
+      border-radius: 2rem;
+      border: 2px solid brown;
+      width: 10rem;
+      text-align: center;
+   }
+   .Start:hover{
+      background-color: rgb(213, 131, 131) ;
+      color: white;
+      box-shadow: 0 0.4rem 1.4rem 0 rgb(202, 152, 152);
+      transform: translateY(-0.1rem);
+      transition: transform 150ms;
+      border: none;
+   }
+
+}
+
+
+
 h1{
-   // font-family:  'Courier New', monospace;
+  
    font-size:  6rem;
    font-weight: bold;
-   color: brown;
-   // text-shadow: 0.2rem 0.4rem  rgb(229, 138, 138);
+   color:  $CalorCard ;
    font-family: 'Rubik Vinyl', 'cursive';
+   // font-family: 'Rubik Vinyl', 'cursive';
+   animation: pulse !important; /* referring directly to the animation's @keyframe declaration */
+   animation-duration: 2s !important; /* don't forget to set a duration! */
+   animation-iteration-count: infinite !important;
+   
 
-   // margin-bottom: 5rem;
+
+
 }
+
+
+@media (max-width: 1150px) {
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: none;
+    font-weight: bold;
+    color: brown;
+    font-family: "Rubik Vinyl", "cursive";
+  }
+  .container0 .flex-center1 {
+    width: 80vw !important;
+  }
+  .container0 .flex-center1 .flex-column .inpSubmit {
+    font-size: 1rem !important;
+  }
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 4rem;
+    box-shadow: 0 0.4rem 1.4rem 0 brown;
+    padding: 60px;
+    width: 80vw !important;
+  }
+  .container3 .card2 {
+    grid-template-columns: none !important;
+    justify-content: center !important;
+    display: flex;
+  }
+  .container3 .card2 {
+    width: 90% !important;
+    min-height: 600px !important;
+    padding: 5px !important;
+  }
+  .container3 .card2 h6 {
+    text-align: center;
+  }
+  .container3 .card2 p {
+    text-align: center;
+  }
+  .container3 .card2 #name {
+    text-align: center;
+  }
+  .container3 .card2 #AnswerUser {
+    text-align: center;
+  }
+  .container3 .card2 #RightAnswer {
+    text-align: center;
+  }
+  .container3 .card2 #Explication {
+    text-align: center;
+  }
+}
+
 @mixin center-items{
    justify-content: center;
    align-items: center;
 
 }
-// @mixin container{
-//    justify-content: center;
-//    align-items: center;
-//    // background-color: rgb(238, 190, 190);
-//    width: 100vw;
-//    height: 100vh;
-//    display: flex;
-//    // max-width: 80rem;
-//    // margin: 0 auto;
+@mixin container{
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+ 
 
-// }
+}
 
 .container0{
    @include container;
-   background-color: rgb(238, 190, 190);
+   background-color:  $backgroundC;
 
    .flex-center1{
       background-color:white;
@@ -47,13 +216,13 @@ h1{
          .inpText{
             margin-top: 4rem;
             padding: 0.5rem;
-            border: 1px solid brown;
+            border: 1px solid  $CalorCard ;
             border-radius:0.5rem ;
             
          }
          .inpSubmit{
             margin-top: 1rem;
-            background-color:rgb(186, 57, 57);
+            background-color: $CalorCard ;
             padding: 1rem;
             border: none;
             color:white;
@@ -89,16 +258,9 @@ h1{
 .container{
 
    @include container;
-   background-color: rgb(246, 191, 191);
+   background-color:  $backgroundC;
    
-   // background-color: rgb(238, 190, 190);
-   // background-color: rgb(238, 190, 190);
-   // width: 100vw;
-   // height: 100vh;
-   // display: flex;
-   // max-width: 80rem;
-   // margin: 0 auto;
-   // padding: 8rem;
+
    .flex{
       display: flex;
       justify-content: space-between;
@@ -106,15 +268,15 @@ h1{
       .question-n{
          font-size: 1.5rem;
          font-weight: bold;
-         color: brown;
+         color:  $CalorCard ;
 
       }
       .progress-bar{
-         border: 2px solid brown;
+         border: 2px solid  $CalorCard ;
          width: 8rem;
          height: 2rem;
          .full-progress{
-            background-color:brown ;
+            background-color: $CalorCard  ;
             height: 100%;
             width: 50%;
          }
@@ -123,9 +285,9 @@ h1{
 }
 .flex-center{
    @include center-items;
-   background-color:rgb(158, 53, 53);
+   background-color:  white ;
    border-radius: 4rem;
-   box-shadow: 0 0.4rem 1.4rem 0 brown;
+   box-shadow: 0 0.4rem 1.4rem 0  $CalorCard ;
    padding: 60px;
    width: 60vw;
    // height: 100vh;
@@ -146,13 +308,13 @@ h2{
 .display-flex{
    display: flex;
    background-color: white;
-   border: 1.5px solid brown;
+   border: 1.5px solid  $CalorCard ;
    margin-bottom: 1rem;
    padding: 1rem;
    border-radius: 1rem;
    .A{
       font-weight: bold;
-      color: brown;
+      color:  $CalorCard ;
       font-size: larger;
    }
    
@@ -162,7 +324,7 @@ h2{
 }
 
 .display-flex:hover{
-   box-shadow: 0 0.4rem 1.4rem 0 brown;
+   box-shadow: 0 0.4rem 1.4rem 0  $CalorCard ;
    transform: translateY(-0.1rem);
    transition: transform 150ms;
    background-color: rgb(229, 169, 169);
@@ -193,18 +355,8 @@ h2{
     align-items: center;
    
    
-   background-color:  rgb(246, 191, 191);
-   // .direction-column{
-   //    display: flex;
-   //    flex-direction: column;
+   background-color:   $backgroundC;
 
-   // }
-   // .width1{
-   //    width:34rem;
-   //    height: 17rem;
-   //    display: none;
-      
-   // }
    }
    .card{
      
@@ -252,7 +404,7 @@ h2{
       width: 29rem;
       height: 25rem;
       border-radius: 4rem;
-      box-shadow: 0 0.4rem 1.4rem 0 brown;
+      box-shadow: 0 0.4rem 1.4rem 0  $CalorCard ;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -295,7 +447,7 @@ h2{
       display: flex;
       flex-direction: column;
       @include center-items;
-      background-color:  rgb(238, 190, 190);
+      background-color:   $backgroundC;
       
       .card2{
       margin-top: 12px;
@@ -315,7 +467,10 @@ h2{
 
       h6{
          font-size: 1.5rem;
+         font-weight: bold;
          color: black;
+         text-shadow: 1px 1px 2px rgb(34, 15, 18)!important;
+         // font-family: 'Rubik Vinyl', 'cursive';
          
       }
       p{
@@ -327,15 +482,15 @@ h2{
          color: black;
       }
       #AnswerUser{
-         color: rgb(226, 17, 17);
+         color:  $RedColor;
          font-weight: bold;
       }
       #RightAnswer{
-         color: green;
+         color:  $GreenColor;
          font-weight: bold;
       }
       #Explication{
-         color: rgb(117, 29, 117);
+         color:  $Mcolor;
          font-weight: bold;
       }
     

@@ -6,32 +6,128 @@
   padding: 0;
 }
 
+.container4 {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 190, 190);
+}
+.container4 .rules {
+  padding-top: 40px;
+  padding-left: 40px;
+  background-color: white;
+  width: 25rem;
+  height: 15rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.4rem 1.4rem 0 brown;
+}
+.container4 .rules .flex-end {
+  margin-top: 25px;
+  margin-left: 12rem;
+}
+.container4 .rules .A1 {
+  margin-top: 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+  background-color: white;
+  border: brown;
+  padding: 10px;
+  border-radius: 1rem;
+  border: 2px solid brown;
+  width: 2rem;
+  text-align: center;
+}
+.container4 .rules .A2 {
+  margin-top: 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: brown;
+  border: brown;
+  padding: 10px;
+  border-radius: 1rem;
+  width: 2rem;
+  text-align: center;
+}
+.container4 .rules p span {
+  color: brown;
+  font-weight: bold;
+}
+.container4 .rules h5 {
+  font-size: 1.5rem;
+  color: brown;
+}
+.container4 .rules .rulesP {
+  margin-top: 30px;
+  line-height: 1.5;
+}
+.container4 h6 {
+  font-size: 7rem;
+  color: brown;
+  font-family: "Rubik Vinyl", "cursive";
+  -webkit-animation: pulse !important;
+          animation: pulse !important; /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 2s !important;
+          animation-duration: 2s !important; /* don't forget to set a duration! */
+  -webkit-animation-iteration-count: infinite !important;
+          animation-iteration-count: infinite !important;
+  text-shadow: 1px 1px 2px rgb(34, 15, 18) !important;
+}
+.container4 .Start {
+  margin-top: 25px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+  background-color: white;
+  border: brown;
+  padding: 15px;
+  border-radius: 2rem;
+  border: 2px solid brown;
+  width: 10rem;
+  text-align: center;
+}
+.container4 .Start:hover {
+  background-color: rgb(213, 131, 131);
+  color: white;
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(202, 152, 152);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+  border: none;
+}
+
 h1 {
   font-size: 6rem;
   font-weight: bold;
   color: brown;
-  /* text-shadow: 0.2rem 0.4rem rgb(229, 138, 138); */
   font-family: "Rubik Vinyl", "cursive";
+  -webkit-animation: pulse !important;
+          animation: pulse !important; /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 2s !important;
+          animation-duration: 2s !important; /* don't forget to set a duration! */
+  -webkit-animation-iteration-count: infinite !important;
+          animation-iteration-count: infinite !important;
 }
 
-
 @media (max-width: 1150px) {
-  h1{
-     font-size:  2.5rem;
-     text-align: center;
-     text-shadow: none;
-     
-     font-weight: bold;
-     color: brown;
-   
-     font-family: 'Rubik Vinyl', 'cursive';
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: none;
+    font-weight: bold;
+    color: brown;
+    font-family: "Rubik Vinyl", "cursive";
   }
-
-  .container0 .flex-center1{
+  .container0 .flex-center1 {
     width: 80vw !important;
-   
   }
-  .container0 .flex-center1 .flex-column .inpSubmit{
+  .container0 .flex-center1 .flex-column .inpSubmit {
     font-size: 1rem !important;
   }
   .flex-center {
@@ -43,48 +139,35 @@ h1 {
     padding: 60px;
     width: 80vw !important;
   }
-
   .container3 .card2 {
-  
-    grid-template-columns:none !important;
+    grid-template-columns: none !important;
     justify-content: center !important;
     display: flex;
-    
-  
   }
-  .container3 .card2{
-     width: 90% !important;
-     min-height:600px !important ;
-     padding: 5px !important;
-   
-
+  .container3 .card2 {
+    width: 90% !important;
+    min-height: 600px !important;
+    padding: 5px !important;
   }
-
-.container3 .card2 h6 {
-  text-align: center;
+  .container3 .card2 h6 {
+    text-align: center;
+  }
+  .container3 .card2 p {
+    text-align: center;
+  }
+  .container3 .card2 #name {
+    text-align: center;
+  }
+  .container3 .card2 #AnswerUser {
+    text-align: center;
+  }
+  .container3 .card2 #RightAnswer {
+    text-align: center;
+  }
+  .container3 .card2 #Explication {
+    text-align: center;
+  }
 }
-.container3 .card2 p {
-  text-align: center;
-}
-.container3 .card2 #name {
-  text-align: center;
-}
-.container3 .card2 #AnswerUser {
-  text-align: center;
-}
-.container3 .card2 #RightAnswer {
-  text-align: center;
-}
-.container3 .card2 #Explication {
-  text-align: center;
-}
-}
-
-
-
-
-
-
 .container0 {
   justify-content: center;
   align-items: center;
@@ -112,7 +195,7 @@ h1 {
 }
 .container0 .flex-center1 .flex-column .inpSubmit {
   margin-top: 1rem;
-  background-color: rgb(186, 57, 57);
+  background-color: brown;
   padding: 1rem;
   border: none;
   color: white;
@@ -138,7 +221,7 @@ h1 {
   width: 100vw;
   height: 100vh;
   display: flex;
-  background-color: rgb(246, 191, 191);
+  background-color: rgb(238, 190, 190);
 }
 .container .flex {
   display: flex;
@@ -215,7 +298,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(246, 191, 191);
+  background-color: rgb(238, 190, 190);
 }
 
 .card {
@@ -291,7 +374,9 @@ h2 {
 }
 .container3 .card2 h6 {
   font-size: 1.5rem;
+  font-weight: bold;
   color: black;
+  text-shadow: 1px 1px 2px rgb(34, 15, 18) !important;
 }
 .container3 .card2 p {
   font-size: large;

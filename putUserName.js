@@ -1,7 +1,5 @@
 
 
-
-
 // document.querySelector('.inpText').value;
 
 function getInputvalue(){
